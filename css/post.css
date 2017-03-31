@@ -1,0 +1,54 @@
+// コンパイル前
+.box{
+    size:124px 88px;
+}
+ 
+h1 {
+  color:red;
+}
+
+.widget1 {
+  width: 100%;
+}
+
+.widget1 .naka{
+    color:#bbb;  
+}
+
+@media (min-width: 30em) { 
+ 
+    .widget1{
+        width:50%;
+    }
+  }
+
+@media (min-width: 60em) {
+ 
+    .widget1{
+        width:25%;
+    }
+  }
+
+.widget2 {
+  width: 100px
+}
+
+@media (min-width: 30em) {
+ 
+    .widget2{
+        width:200px;
+    }
+  }
+.aaa{ 
+	font-size:32px; 
+	font-size:2rem;
+	height:calc(100px - 2em);
+	margin:calc(100% - 3px);
+}
+/*エラーが出る
+//カスタムセレクタを用いると,既存のセレクタを用いて新たなセレクタを作成することができる.
+@custom-selector :--header h1, h2;
+:--header{
+	color:#aaa;
+}
+*/

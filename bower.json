@@ -1,0 +1,17 @@
+{
+  "name": "site_template",
+  "authors": [
+    "hiramatsu <hiramatsu@cueplus.com>"
+  ],
+  "description": "サイト制作のベースになる",
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

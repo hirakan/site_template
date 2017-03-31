@@ -1,0 +1,33 @@
+// タイトルの説明
+//
+// 内容説明
+//
+// :hover             - ホバー時の挙動説明
+// .stars-given       - クラス名の説明
+// .stars-given:hover - クラスのホバー時の説明
+// .disabled          - Dims the button to indicate it cannot be used.
+//
+// Markup:
+// <button class="button {$modifiers}">Button (button.button)</button>
+// <a href="#" class="button {$modifiers}">Button (a.button)</a>
+//
+// hogefugahogefuga
+//
+// Styleguide 1.1.
+html {
+    .button {
+        background-color: #CCC;
+        &:hover {
+            font-weight: bold;
+        }
+        &.stars-given {
+            color: #FFFFCC;
+            &:hover {
+                color: white;
+            }
+        }
+        &.disabled {
+            color: #AAA;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "site_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-cssnext": "^1.0.0",
+    "grunt-gulp": "^1.0.2",
+    "grunt-image": "^2.2.3",
+    "grunt-kss": "^5.0.1",
+    "grunt-postcss": "^0.8.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-kss": "0.0.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^2.1.2",
+    "precss": "^1.4.0",
+    "sc5-styleguide": "^1.5.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1"
+  },
+  "description": ""
+}
