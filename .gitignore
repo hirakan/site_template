@@ -1,0 +1,10 @@
+#ファイル
+.DS_Store
+ 
+#ディレクトリ
+/tmp
+/.sass-cache
+/node_module
+ 
+#ワイルドカード
+*.log
