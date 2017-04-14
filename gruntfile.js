@@ -28,6 +28,14 @@ module.exports = function (grunt) {
             browsers: ['last 5 version', 'ie 8', 'ie 9']
         }
     },
+    //cssminタスクを追加
+      cssmin: {
+          compress: {
+              files: {
+                  'css/style.css': ['css/style.css']
+              }
+          }
+      },
     //画像の圧縮
      imagemin: {
         dynamic: { 
@@ -65,6 +73,12 @@ module.exports = function (grunt) {
         //変更されたらどのタスクを実行するか指定
         tasks: [ 'autoprefixer' ]
       },
+      cssmin: {
+        //変更を監視するファイルを指定
+        files: ['sass/*.scss'],
+        //変更されたらどのタスクを実行するか指定
+        tasks: [ 'cssmin' ]
+      },
       imagemin: {
         //cwd: 'src/',
         files:  ['**/*.{png,jpg,gif}'], 
@@ -77,6 +91,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
  grunt.loadNpmTasks('grunt-autoprefixer');
+ grunt.loadNpmTasks('grunt-contrib-cssmin');
  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.registerTask('default', [ 'sass' ,'autoprefixer','imagemin']);
 grunt.registerTask('styleguide', ['compass', 'kss']);
